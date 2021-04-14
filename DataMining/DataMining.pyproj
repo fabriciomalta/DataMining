@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>23437daf-d64f-436b-a858-6b3b61be731a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PreProcessing\DataCleaning.py</StartupFile>
+    <StartupFile>Plotagem\Graficos.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataMining.py" />
+    <Compile Include="Plotagem\Graficos.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PreProcessing\DataCleaning.py">
       <SubType>Code</SubType>
     </Compile>
@@ -35,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datasets\" />
+    <Folder Include="Plotagem\" />
     <Folder Include="PreProcessing\" />
   </ItemGroup>
   <ItemGroup>

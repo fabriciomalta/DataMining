@@ -3,8 +3,8 @@ import numpy as np
 
 def main():
     # Faz a leitura do arquivo
-    names = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index']
-    features = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index']
+    names = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index','mult','name','group','alive-at-1']
+    features = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index','alive-at-1']
     output_file = 'Datasets/echocardiogramclear.data'
     input_file = 'Datasets/echocardiogram.data'
     df = pd.read_csv(input_file, # Nome do arquivo com dados
@@ -33,7 +33,7 @@ def main():
     print(df.isnull().sum())
     print("\n")
     
-    # Tratando valores faltantes da coluna Density
+    # Tratando valores faltantes da coluna AgeAtHeartAttack
     print("VALORES FALTANTES DA COLUNA AgeAtHeartAttack\n")
     print('Total valores ausentes: ' + str(df['AgeAtHeartAttack'].isnull().sum()))
 
