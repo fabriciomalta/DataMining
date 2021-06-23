@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>23437daf-d64f-436b-a858-6b3b61be731a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Knn\svm.py</StartupFile>
+    <StartupFile>Classificação\svm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,13 +23,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataMining.py" />
-    <Compile Include="Knn\kmeans.py">
+    <Compile Include="Clustering\kmeans.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Knn\knn.py">
+    <Compile Include="Classificação\knn.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Knn\svm.py">
+    <Compile Include="Classificação\svm.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Plotagem\caracteristicas.py">
@@ -50,7 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datasets\" />
-    <Folder Include="Knn\" />
+    <Folder Include="Classificação\" />
+    <Folder Include="Clustering\" />
     <Folder Include="Plotagem\" />
     <Folder Include="PreProcessing\" />
   </ItemGroup>
