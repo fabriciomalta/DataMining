@@ -11,7 +11,7 @@ def main():
     features = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index','alive-at-1']
     target = 'alive-at-1'
     df = pd.read_csv(input_file,    # Nome do arquivo com dados
-                     names = names) # Nome das colunas                      
+                     names = features) # Nome das colunas                      
     ShowInformationDataFrame(df,"Dataframe original")
 
     # Separating out the features

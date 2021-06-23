@@ -9,7 +9,7 @@ def main():
     input_file = 'Datasets/echocardiogramclear.data'
     names = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index','mult','name','group','alive-at-1']
     features = ['Survival','StillAlive','AgeAtHeartAttack','Pericardial-Effusion','fractional-shortening','Epss','lvdd', 'wall-score','wall-index','alive-at-1']
-    target = 'AgeAtHeartAttack'
+    target = 'alive-at-1'
     df = pd.read_csv(input_file,    # Nome do arquivo com dados
                      names = features) # Nome das colunas                      
     ShowInformationDataFrame(df,"Dataframe original")

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>23437daf-d64f-436b-a858-6b3b61be731a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Plotagem\caracteristicas.py</StartupFile>
+    <StartupFile>Knn\svm.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DataMining.py" />
+    <Compile Include="Knn\kmeans.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Knn\knn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Knn\svm.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Plotagem\caracteristicas.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datasets\" />
+    <Folder Include="Knn\" />
     <Folder Include="Plotagem\" />
     <Folder Include="PreProcessing\" />
   </ItemGroup>
